@@ -38,10 +38,19 @@ a {
   text-decoration: none;
   color: var(--secondary-main);
   transition: color 0.3s ease;
+  cursor: pointer;
 
   // &:hover {
   //   color: var(--color-secondary);
   // }
+}
+
+a, 
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
 }
 
 ul,
@@ -121,8 +130,10 @@ h6 {
 
 .flex {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  &.center {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .grid {
@@ -138,6 +149,7 @@ h6 {
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
+  white-space: nowrap;
   color: var(--text-white);
   background-color: var(--secondary-main);
   border: 2px solid var(--secondary-main);
