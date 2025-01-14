@@ -60,14 +60,12 @@
     display: flex;
     gap: 1.5rem;
 }
-
 .content-block-actions-btn {
-    width: 17rem;
-    height: 5rem;
-    border: 2px solid var(--text-white);
-    border-radius: 1rem;
-    background-color: var(--text-black);
-    text-transform: none;
+    z-index: 1;
+}
+.content-block-actions-image {
+   height: 94px;
+   z-index: 0;
 }
 
 .banner-image-block {
