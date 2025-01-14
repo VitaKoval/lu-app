@@ -1,31 +1,3 @@
-// function animateRunningNumbers(containerClass, numberClass) {
-//     const container = document.querySelector(`.${containerClass}`);
-//     const numbers = container?.querySelectorAll(`.${numberClass}`);
-//     if (!container || !numbers) return;
-
-//     numbers.forEach(number => {
-//         const targetValue = parseInt(number.textContent.replace(/\D/g, ''), 10);
-//         if (isNaN(targetValue)) return;
-
-//         let currentValue = 0;
-//         const increment = Math.ceil(targetValue / 100); // Set the animation speed
-//         const interval = setInterval(() => {
-//             currentValue += increment;
-//             if (currentValue >= targetValue) {
-//                 currentValue = targetValue;
-//                 clearInterval(interval);
-//             }
-//             number.textContent = `${currentValue}`;
-//         }, 20); //Update interval 
-//     });
-// }
-
-// window.addEventListener("scroll", function () {
-//     // Animation for statistics
-//     animateRunningNumbers("js-running-value", "js-running-number");
-// });
-
-// Функція для отримання абсолютного значення top елемента
 function getElementTop(element) {
     const rect = element?.getBoundingClientRect();
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -70,3 +42,12 @@ function animateRunningNumbers(containerClass, numberClass) {
 }
 
 animateRunningNumbers("js-running-value", "js-running-number");
+
+
+document.querySelector('.video-content-play-btn').addEventListener('click', function() {
+    var videoElement = document.querySelector('.video-content-element');
+    var thumbnail = document.querySelector('.video-content-thumbnail');
+    
+    thumbnail.style.display = 'none';
+    videoElement.style.display = 'block';
+});
