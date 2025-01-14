@@ -1,0 +1,41 @@
+.statistic {
+    padding: 78px 0;
+}
+
+.statistic-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1812px;
+}
+
+.divider {
+    width: 3px;
+    height: 149px;
+    background-color: var(--primary-light);
+}
+
+.statistic-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 431px;
+    padding: 0 32px;
+}
+
+.statistic-metrics {
+    font-size: 96px;
+    font-weight: 600;
+    color: var(--primary-light);
+}
+
+.statistic-description {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.statistic-description-icon {
+    width: 52px;
+}
