@@ -3,20 +3,6 @@
     min-height: 100vh;
 }
 
-.bg-image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 60%;
-    z-index: -1;
-    img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    }
-}
-
 .banner-wrapper {
     display: flex;
     align-items: center;
