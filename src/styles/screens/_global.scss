@@ -202,6 +202,9 @@ section {
     }
     &.bg-bottom {
         bottom: 0;
+        img {
+          bottom: 0;
+        }
     }
     &.bg-bottom-out {
         bottom: -50%;
