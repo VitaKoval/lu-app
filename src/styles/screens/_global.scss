@@ -209,4 +209,38 @@ section {
     &.bg-bottom-out {
         bottom: -50%;
     }
+    &.over-content {
+       z-index: 3;
+    }
+    &.overflow-hidden {
+      overflow: hidden;
+    }
+}
+
+// ==============================
+// GLOBAL SECTIONS ELEMENTS
+// ==============================
+
+.section-title {
+    position: relative;
+    font-size: 4.5rem;
+    text-align: center;
+    color: var(--text-white);
+    padding-bottom: 2.625rem;
+    margin-bottom: 198px;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 9rem;
+        height: 1.5rem;
+        background: linear-gradient(90deg, #673AB7 48.76%, #3579C5 100%);
+        border-radius: 1rem;
+        
+    }
+    &.underlined-light::after {
+        background: linear-gradient(169.02deg, #B2EBF2 -58.33%, #D1C4E9 60.57%);
+    }
 }
